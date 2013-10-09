@@ -87,7 +87,7 @@ clean:
 	-if [ -e installed.touch ]; then rm installed.touch; fi	
 	-if [ -e pkgconfiged.touch ]; then rm pkgconfiged.touch; fi
 	-if [ -e $(BUILD_PREFIX)/include/pstream ]; then rm -rf $(BUILD_PREFIX)/include/pstream; fi
-	-if [ -e $(BUILD_PREFIX)/lib/pkgconfig/$(POD_NAME).pc ]; then rm -f $(BUILD_PREFIX)/lib/pkgconfig/$(POD_NAME).pc
+	-if [ -e $(BUILD_PREFIX)/lib/pkgconfig/$(POD_NAME).pc ]; then rm -f $(BUILD_PREFIX)/lib/pkgconfig/$(POD_NAME).pc; fi
 
 
 # other (custom) targets are passed through to the cmake-generated Makefile 
